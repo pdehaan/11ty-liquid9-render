@@ -1,11 +1,21 @@
-module.exports = eleventyConfig => {
+const { Liquid } = require("liquidjs");
+
+module.exports = (eleventyConfig) => {
+  eleventyConfig.setLibrary(
+    "liquid",
+    new Liquid({
+      dynamicPartials: true,
+      strictFilters: true,
+    })
+  );
+
   eleventyConfig.addShortcode("year", () => new Date().getFullYear());
-  eleventyConfig.addShortcode("calaphon", (lib) => `${lib?.name}@${lib?.version}`);
+  eleventyConfig.addShortcode("calaphon", ({ name, version }) => `${name}@${version}`);
 
   return {
     dir: {
       input: "src",
-      output: "www"
-    }
+      output: "www",
+    },
   };
 };
