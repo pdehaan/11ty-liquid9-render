@@ -1,0 +1,27 @@
+{
+  "name": "11ty-liquid9-render",
+  "description": "Testing LiquidJS@9 support in Eleventy 1.0.0-beta.",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "bugs": {
+    "url": "https://github.com/pdehaan/11ty-liquid9-render/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "github:11ty/eleventy",
+    "liquidjs": "^9.19.0"
+  },
+  "homepage": "https://github.com/pdehaan/11ty-liquid9-render#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
+  "main": "index.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11ty-liquid9-render.git"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
